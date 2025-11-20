@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+body {
+  background-color: #D9D9D9;
+}
+
+main {
+  width: 100vw;
+  max-width: 100vw;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@media(max-width: 400px) {
+
+  .p-6 {
+    padding: 1rem;
+}
+
+}
+@keyframes fadeInList {
+  0% {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInList {
+  animation: fadeInList 0.25s ease-out;
+}
+
+@keyframes fadeItem {
+  0% {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeItem {
+  animation: fadeItem 0.25s ease-out forwards;
+}

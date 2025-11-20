@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+*.log.*
+
+# Build output
+dist/
+build/
+.tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Coverage and test output
+coverage/
+.nyc_output/
+
+# PM2
+.pids
+*.pid
+*.seed
+*.pid.lock
+
+# TypeScript cache
+tsconfig.tsbuildinfo
+
+# Transpiled JS (se estiver usando TypeScript)
+out/
