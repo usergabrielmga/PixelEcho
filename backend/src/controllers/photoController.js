@@ -1,7 +1,7 @@
 import Photo from "../models/photo.js";
 import cloudinary from "../config/cloud.js";
 
-// Criar foto
+
 export const createPhoto = async (req, res) => {
   try {
     if (!req.file) return res.status(400).json({ error: "Nenhum arquivo enviado" });
@@ -58,7 +58,7 @@ export const getPhotos = async (req, res) => {
   }
 };
 
-// Atualizar descrição da foto
+
 export const updatePhotoDescription = async (req, res) => {
   try {
     const { photoId } = req.params;
@@ -79,7 +79,7 @@ export const updatePhotoDescription = async (req, res) => {
   }
 };
 
-// Deletar foto
+
 export const deletePhoto = async (req, res) => {
   try {
     const { photoId } = req.params;
@@ -96,7 +96,7 @@ export const deletePhoto = async (req, res) => {
   }
 };
 
-// Buscar fotos por descrição/keywords
+
 export const searchPhotos = async (req, res) => {
   try {
     const query = req.query.q;

@@ -3,7 +3,7 @@ import { createPhoto } from "../services/photoService";
 
 interface ModalPhotoProps {
   closeModal: () => void;
-  categoryId: string; // categoria obrigatória para criar
+  categoryId: string; 
   refresh: () => void;
 }
 

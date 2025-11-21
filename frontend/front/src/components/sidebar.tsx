@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 
-
 export default function SideBar() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -41,11 +40,11 @@ export default function SideBar() {
         </a>
         
 
-        {/* Espaço invisível p/ manter alinhamento */}
+        
         <div className="w-10" />
       </div>
 
-      {/* OVERLAY ESCURO (mobile) */}
+     
       {isOpen && (
         <div
           onClick={() => setIsOpen(false)}

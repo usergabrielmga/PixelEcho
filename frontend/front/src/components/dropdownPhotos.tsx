@@ -36,7 +36,8 @@ export default function DropdownPhotos( { onEdit, onDelete, onDownload }: Dropdo
               setOpen(false);
             }}
           >
-            <FaEdit size={16} /> Editar
+            
+          <FaEdit size={16} /> Editar
           </button>
 
             <button
@@ -47,7 +48,8 @@ export default function DropdownPhotos( { onEdit, onDelete, onDownload }: Dropdo
               setOpen(false);
             }}
           >
-            <FaDownload size={16} /> Baixar
+
+          <FaDownload size={16} /> Baixar
           </button>
 
           <button

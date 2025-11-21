@@ -39,7 +39,7 @@ export function GlobalPhotos() {
        
       </div>
 
-      {/* Grid tipo Pinterest */}
+     
       <div className="columns-2 md:columns-3 xl:columns-4 gap-4">
         {photos.map((photo) => (
           <div
@@ -57,7 +57,7 @@ export function GlobalPhotos() {
         ))}
       </div>
 
-      {/* ModalViewPhoto */}
+    
       {isOpen && selectedPhoto && (
         <ModalViewPhoto
           photo={selectedPhoto}

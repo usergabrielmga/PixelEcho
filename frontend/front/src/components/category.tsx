@@ -64,41 +64,14 @@ export function Category() {
 
 
   return (
-    <div className="p-10 w-full  pt-[110px] md:pt-6">
-      <div className="flex justify-between items-center">
-       <button
-          onClick={handleNew}
-          className="
-            px-3 py-3 sm:px-4 sm:py-3      
-            bg-sky-700 
-            text-white 
-            font-medium sm:font-semibold   
-            text-sm sm:text-base           
-            rounded-lg 
-            mb-4 sm:mb-6            
-            hover:bg-sky-600
-            hover:scale-105 
-            transform 
-            transition-all 
-            duration-300
-            flex 
-            items-center 
-            gap-2
-            cursor-pointer
-          "
-        >
-          Nova Categoria
-          <IoMdAddCircle size={20} />
-        </button>
-
-      </div>
+    <div className="p-10 w-full  pt-[110px] md:pt-10">
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {categories.map((cat) => (
           <div
             key={cat._id}
             className="bg-white rounded-2xl shadow  flex flex-col items-center relative cursor-pointer group overflow-hidden hover:scale-105 duration-200 ease-in"
-             onClick={() => {
+            onClick={() => {
               if (cat.isFixed) {
                 navigate("/photos/global"); 
               } else {
@@ -132,6 +105,19 @@ export function Category() {
             )}
           </div>
         ))}
+
+        <div
+          className="bg-white rounded-2xl shadow flex flex-col items-center justify-center cursor-pointer group hover:scale-105 duration-200 ease-in overflow-hidden"
+          onClick={handleNew}
+        >
+        <div className="w-full h-40 sm:h-48 md:h-52 lg:h-56 xl:h-60 flex flex-col items-center justify-center">
+          <IoMdAddCircle size={40} className="text-sky-700" />
+          <h3 className="mt-2 text-center text-sm sm:text-base font-medium text-sky-700">
+            Nova Categoria
+          </h3>
+        </div>
+  </div>
+        
       </div>
 
       {isOpen && (
